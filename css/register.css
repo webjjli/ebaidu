@@ -1,0 +1,159 @@
+body {
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #000000;
+}
+
+* {
+	margin: 0 0;
+	padding: 0 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul li{
+	list-style-type: none;
+}
+.header {
+	width: 100%;
+	height: 86px;
+	/*border: 1px solid darkblue;*/
+	min-width: 1200px;
+}
+
+.header_top {
+	width: 1000px;
+	height: 85px;
+	/*border: 1px solid salmon;*/
+	margin: 0 auto;
+}
+
+.header_logo {
+	width: 218px;
+	height: 60px;
+	/*border: 1px solid black;*/
+	margin-top: 10px;
+	float: left;
+}
+
+.header_logo img {
+	width: 100%;
+	height: 100%;
+}
+
+.header_nav {
+	width: 600px;
+	height: 85px;
+	/*border: 1px solid green;*/
+	float: right;
+}
+
+.header_nav>ul>li {
+	float: left;
+	line-height: 75px;
+	padding: 15px;
+	list-style-type: none;
+}
+
+.header_nav>ul>li>a {
+	color: #000000;
+}
+
+.header_nav>ul>li>a:hover {
+	color: mediumblue;
+}
+.cen-conter{
+	width: 100%;
+	height: 110px;
+	background-color: gainsboro;
+	border: 1PX solid gainsboro;
+	min-width: 1200px;
+}
+.cen-conter_c{
+	width: 100%;
+	height: 90px;
+	background-color: #1D73B0;
+	margin-top: 10px;
+}
+.register{
+	width:10%;
+	height: 80px;
+	/*border: 1px solid saddlebrown;*/
+	margin-left: 20%;
+	color: white;
+	font-size: 28px;
+}
+.register span{
+	line-height: 80px;
+}
+.download{
+	width: 100%;
+	height: 476px;
+	/*border: 1px solid saddlebrown;*/
+	min-width: 1200px;
+}
+.download_c{
+	width: 60%;
+	height: 310px;
+	/*border: 1px solid darkblue;*/
+	margin: 0 auto;
+	margin-top:81px;
+}
+.download_c_l{
+	width: 50%;
+	height: 310px;
+	/*border: 1px solid navy;*/
+	float: left;
+}
+.download_c_l p{
+	font-size: 18px;
+}
+.download_c_l input{
+	width: 155px;
+	height: 45px;
+	background-color: #009CDE;
+	border-radius:10px;
+	border: none;
+	font-size: 18px;
+	color:white ;	
+}
+.download_c_l ul li{
+	line-height: 30px;	
+	list-style:disc;
+	margin-left: 20px;
+}
+.download_c_l a{
+	margin-left: 50%;
+	}
+.footer {
+	width: 100%;
+	height: 385px;
+	/*border: 1px solid darkblue;*/
+	background-color: #15588C;
+	min-width: 1200px;
+}
+.footer_c{
+	width: 70%;
+	height:385px;
+	/*border: 1px solid saddlebrown;*/
+	margin: 0 auto;
+}
+.footer_c_1{
+	width: 23%;
+	height: 300px;
+	/*border: 1px solid seagreen;*/
+	float: left;
+	margin-top: 40px;
+	color: white;
+}
+.footer_c_1 ul li{
+	padding-bottom: 15px;
+}
+.footer ul{
+	margin-top: 20px;
+}
+.footer_c_1 a{
+	color: white;
+}

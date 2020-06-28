@@ -1,0 +1,192 @@
+body {
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #000000;
+}
+
+* {
+	margin: 0 0;
+	padding: 0 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul li{
+	list-style-type: none;
+}
+.header {
+	width: 100%;
+	height: 86px;
+	/*border: 1px solid darkblue;*/
+	min-width: 1200px;
+}
+
+.header_top {
+	width: 1000px;
+	height: 85px;
+	/*border: 1px solid salmon;*/
+	margin: 0 auto;
+}
+
+.header_logo {
+	width: 218px;
+	height: 60px;
+	/*border: 1px solid black;*/
+	margin-top: 10px;
+	float: left;
+}
+
+.header_logo img {
+	width: 100%;
+	height: 100%;
+}
+
+.header_nav {
+	width: 600px;
+	height: 85px;
+	/*border: 1px solid green;*/
+	float: right;
+}
+
+.header_nav>ul>li {
+	float: left;
+	line-height: 75px;
+	padding: 15px;
+	list-style-type: none;
+}
+
+.header_nav>ul>li>a {
+	color: #000000;
+}
+
+.header_nav>ul>li>a:hover {
+	color: mediumblue;
+}
+.cen-conter{
+	width: 100%;
+	height: 110px;
+	background-color: gainsboro;
+	border: 1PX solid gainsboro;
+	min-width: 1200px;
+}
+.cen-conter_c{
+	width: 100%;
+	height: 90px;
+	background-color: #1D73B0;
+	margin-top: 10px;
+}
+.register{
+	width:10%;
+	height: 80px;
+	/*border: 1px solid saddlebrown;*/
+	margin-left: 20%;
+	color: white;
+	font-size: 28px;
+}
+.register span{
+	line-height: 80px;
+}
+.technology{
+	width: 100%;
+	height: 1170px;
+	/*border: 1px solid firebrick ;*/
+	min-width: 1200px;
+	margin-top: 30px;
+}
+.technology_c{
+	width: 60%;
+	height: 1170px;
+	/*border: 1px solid darkcyan;*/
+	margin:0 auto ;
+	min-width: 900px;
+}
+.tec_a{
+	color: black;
+}
+.tec_help{
+	color: blue;
+}
+.tec_box_l{
+	width: 100%;
+	height: 150px;
+	/*border: 1px solid saddlebrown;*/
+	padding-top: 15px;
+	margin-top: 10px;
+	border-top:3px solid gainsboro ;
+}
+.tec_img{
+	width: 200px;
+	height: 150px;
+	border:4px solid gainsboro;
+	float: left;
+	
+}
+.tec_img img{
+	width: 100%;
+	height: 100%;
+}
+.tec_box_r{
+	width: 70%;
+	height: 150px;
+	/*border:1px solid darkblue;*/
+	float: left;
+	margin-left: 20px;
+}
+.tec_box_r a{
+	color: #484848;
+	font-size: 18px;
+}
+.tec_box_r_span{
+	color: #484848;
+}
+.tec_box_r_p{
+	color: #484848;
+	padding-top: 8px;
+}
+.tec_box_r input{
+	width: 110px;
+	height: 35px;
+	background-color: #484848;
+	color: white;
+	font-size: 15px;
+	border: none;
+	border-radius: 5px;
+}
+.tec_box_r input:hover{
+	background-color:cornflowerblue ;
+}
+
+
+
+.footer {
+	width: 100%;
+	height: 385px;
+	/*border: 1px solid darkblue;*/
+	background-color: #15588C;
+	min-width: 1200px;
+}
+.footer_c{
+	width: 70%;
+	height:385px;
+	/*border: 1px solid saddlebrown;*/
+	margin: 0 auto;
+}
+.footer_c_1{
+	width: 23%;
+	height: 300px;
+	/*border: 1px solid seagreen;*/
+	float: left;
+	margin-top: 40px;
+	color: white;
+}
+.footer_c_1 ul li{
+	padding-bottom: 15px;
+}
+.footer ul{
+	margin-top: 20px;
+}
+.footer_c_1 a{
+	color: white;
+}
