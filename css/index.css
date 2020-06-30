@@ -67,40 +67,68 @@ ul li{
 
 .lunbo {
 	width: 100%;
-	height: 430px;
-	/*border: 1px solid darkgoldenrod;*/
+	height: 430px;	
+	border: 1px solid darkgoldenrod;
 	/*background-color: dodgerblue;*/
 	min-width: 1200px;
+	background-image: url(../img/background.jpg);
+	background-repeat:no-repeat ;
+	background-size:cover;
 }
-
-.swiper-container {
+.lunbo_cen{
+	width: 71%;
+	height: 430px;
+	margin: 0 auto;
+	font-family:FangSong_GB2312;
+	/*border: 1px solid  red ;*/
+}
+.lunbo_text{
+	width: 50%;
+	height: 220px;
+	float: left;
+	/*border: 1px solid red;*/
+	margin-top: 80px;
+	color: white;
+}
+.lunbo_text span{
+	font-size: 32px;
+}
+.lunbo_text input{
+	width: 100px;
+	height: 45px;
+	background-color: #444445;
+	border: 4px solid darkblue;
+	margin-top: 50px;
+	float: right;
+	margin-right: 30px;
+}
+.lunbo input:hover{
+	background-color: dodgerblue;
+}
+.lunbo_text p{
+	padding-top: 20px;
+}
+.lunbo_img{
+	width: 400px;
+	height: 300px;
+	float: right;
+	margin-top: 50px;
+}
+.lunbo_img img{
 	width: 100%;
 	height: 100%;
 }
-
-.swiper-slide {
-	text-align: center;
-	font-size: 18px;
-	background: #fff;
-	/* Center slide text vertically */
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	align-items: center;
+/*.lunbo_img >img{
+	width: 500px;
+	height: 430px;
+	float: right;
 }
-
-.lunbo img {
-	width: 100%;
+.lunbo_img span{
+	width: 300px;
 	height: 100%;
-}
+	color: white;
+	font-size: 25px;
+}*/
 
 .conter_1 {
 	width: 100%;
