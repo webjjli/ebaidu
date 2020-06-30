@@ -4,6 +4,8 @@
 		<meta charset="UTF-8">
 		<title>关于我们</title>
 		<link rel="stylesheet" type="text/css" href="css/about_us.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 	</head>
 	<body>
@@ -27,9 +29,9 @@
 						<li>
 							<a href="technology.html">技术支持</a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="#">在线购买</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="news.html">新闻资讯</a>
 						</li>
@@ -45,7 +47,7 @@
 		<div class="cen-conter">
 			<div class="cen-conter_c">
 				<div class="register">
-					<span>关于我们</span>
+					<p class="animated">关于我们</p>
 				</div>
 			</div>
 		</div>
@@ -53,7 +55,7 @@
 		<!--下载-->
 		<div class="download">
 			<div class="adout">
-				<div class="adout_c">
+				<div class=" animated adout_c">
 					<p>&nbsp;&nbsp;&nbsp;&nbsp;南宁网络人电脑有限公司（简称：网络人）是一家极富创新精神的软件开发及IT集成公司，2008年创立于广西南宁。
 						、局域网监控软件和远程开机卡等高科技远程控制领域产品的研发、生产、销售、技术推广与服务。
 						公司的主打产品：网络人远程控制软件、掌控局域网监控软件，在国内拥有了40%的市场占有率，软件通过了国家公安部的认证，
@@ -65,7 +67,7 @@
 						<h3>联系方式</h3>
 				</div>
 				<div class="information">
-					<ul>
+					<ul class="animated">
 						<li>地址： 南宁市衡阳路百万庄7楼D座</li> 
 						<li>电话:0771-xxxxxxxx</li>
 						<li>手机:000-0000-0000</li>
@@ -126,4 +128,28 @@
 			</div>
 		</div>
 	</body>
+	<script>
+		function ani(claname,type1,type2){
+            if(($("."+claname).offset().top - $(window).scrollTop())<$(window).height()){
+					$("."+claname).find("p").eq(0).addClass(type1);
+					$("."+claname).find("div").eq(0).addClass(type1);
+					$("."+claname).find("div").eq(1).addClass(type1);
+					$("."+claname).find("ul").eq(0).addClass(type1);
+			};
+			$(window).scroll(function(){
+				if(($("."+claname).offset().top - $(window).scrollTop())<$(window).height()){
+					$("."+claname).find("p").eq(0).addClass(type1);
+					$("."+claname).find("div").eq(0).addClass(type1);
+					$("."+claname).find("div").eq(1).addClass(type1);
+				};
+			});
+			
+		};
+		
+		ani("download","bounceInUp","bounceInUp");//从下往上
+		ani("information","bounceInUp","bounceInUp");
+		ani("register","bounceInLeft","bounceInRight");
+		
+
+	</script>
 </html>

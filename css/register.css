@@ -85,7 +85,7 @@ ul li{
 	color: white;
 	font-size: 28px;
 }
-.register span{
+.register div{
 	line-height: 80px;
 }
 .download{
@@ -102,6 +102,12 @@ ul li{
 	margin-top:81px;
 }
 .download_c_l{
+	width: 50%;
+	height: 310px;
+	/*border: 1px solid navy;*/
+	float: left;
+}
+.download_c_r{
 	width: 50%;
 	height: 310px;
 	/*border: 1px solid navy;*/
@@ -125,6 +131,27 @@ ul li{
 	margin-left: 20px;
 }
 .download_c_l a{
+	margin-left: 50%;
+	}
+	
+.download_c_r p{
+	font-size: 18px;
+}
+.download_c_r input{
+	width: 155px;
+	height: 45px;
+	background-color: #009CDE;
+	border-radius:10px;
+	border: none;
+	font-size: 18px;
+	color:white ;	
+}
+.download_c_r ul li{
+	line-height: 35px;	
+	list-style:disc;
+	margin-left: 20px;
+}
+.download_c_r a{
 	margin-left: 50%;
 	}
 .footer {
@@ -156,4 +183,7 @@ ul li{
 }
 .footer_c_1 a{
 	color: white;
+}
+.footer_c_1 a:hover{
+	color: red;
 }

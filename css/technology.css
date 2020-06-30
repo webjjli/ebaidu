@@ -85,7 +85,7 @@ ul li{
 	color: white;
 	font-size: 28px;
 }
-.register span{
+.register p{
 	line-height: 80px;
 }
 .technology{
@@ -188,4 +188,7 @@ ul li{
 }
 .footer_c_1 a{
 	color: white;
+}
+.footer_c_1 a:hover{
+	color: red;
 }

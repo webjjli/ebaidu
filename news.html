@@ -2,8 +2,10 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>新闻咨询</title>
+		<title>新闻资讯</title>
 		<link rel="stylesheet" type="text/css" href="css/news.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 	</head>
 	<body>
@@ -27,9 +29,9 @@
 						<li>
 							<a href="technology.html">技术支持</a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="">在线购买</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="news.html">新闻资讯</a>
 						</li>
@@ -45,7 +47,7 @@
 		<div class="cen-conter">
 			<div class="cen-conter_c">
 				<div class="register">
-					<span>新闻咨询</span>
+					<p class="animated">新闻资讯</p>
 				</div>
 			</div>
 		</div>
@@ -190,4 +192,21 @@
 			</div>
 		</div>
 	</body>
+	<script>
+		function ani(claname,type1,type2){
+            if(($("."+claname).offset().top - $(window).scrollTop())<$(window).height()){
+					$("."+claname).find("p").eq(0).addClass(type1);
+			};
+			$(window).scroll(function(){
+				if(($("."+claname).offset().top - $(window).scrollTop())<$(window).height()){
+					$("."+claname).find("p").eq(0).addClass(type1);
+				};
+			});
+			
+		};
+		
+		/*ani("conter_c_nav_1","bounceInUp","bounceInUp");//从下往上*/
+		ani("register","bounceInLeft","bounceInRight");
+
+	</script>
 </html>

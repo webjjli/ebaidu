@@ -4,7 +4,9 @@
 		<meta charset="UTF-8">
 		<title>下载中心</title>
 		<link rel="stylesheet" type="text/css" href="css/download.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
 	</head>
 	<body>
 		<!--头部导航栏-->
@@ -27,9 +29,9 @@
 						<li>
 							<a href="technology.html">技术支持</a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="">在线购买</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="news.html">新闻资讯</a>
 						</li>
@@ -45,7 +47,7 @@
 		<div class="cen-conter">
 			<div class="cen-conter_c">
 				<div class="register">
-					<span>产品中心</span>
+					<p class="animated">产品中心</p>
 				</div>
 			</div>
 		</div>
@@ -176,4 +178,21 @@
 			</div>
 		</div>
 	</body>
+	<script>
+		function ani(claname,type1,type2){
+            if(($("."+claname).offset().top - $(window).scrollTop())<$(window).height()){
+					$("."+claname).find("p").eq(0).addClass(type1);
+			};
+			$(window).scroll(function(){
+				if(($("."+claname).offset().top - $(window).scrollTop())<$(window).height()){
+					$("."+claname).find("p").eq(0).addClass(type1);
+				};
+			});
+			
+		};
+		
+		/*ani("conter_c_nav_1","bounceInUp","bounceInUp");//从下往上*/
+		ani("register","bounceInLeft","bounceInRight");
+
+	</script>
 </html>

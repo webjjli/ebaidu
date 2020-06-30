@@ -120,50 +120,68 @@ ul li{
 .conter_c_nav {
 	width: 98%;
 	height: 65px;
-	/*border: 1px solid gold;*/
 	margin: 0 auto;
 }
 
-.conter_c_nav span {
-	color: white;
-	line-height: 50px;
-	padding-left: 30%
-}
+
 
 .conter_c_nav_1 {
 	width: 308px;
 	height: 55px;
-	/*border: 1px solid green;*/
 	float: left;
+	/*background-color: orangered;*/
+}
+.conter_c_nav_1 div {
+	color: white;
+	line-height: 50px;
+	/*padding-left: 30%;*/
+	width: 308px;
+	height: 55px;
+	float: left;
+	background-color: orangered;
+	text-align: center;
 	box-shadow: 2px 4px 6px #000;
-	/*边框阴影*/
 	-moz-box-shadow: 3px 3px 4px #000;
 	-webkit-box-shadow: 3px 3px 4px #000;
-	background-color: orangered;
 }
-
 .conter_c_nav_2 {
 	width: 308px;
 	height: 55px;
 	/*	border: 1px solid green;*/
+	float: left;
+}
+.conter_c_nav_2 div{
+	width: 308px;
+	height: 55px;
+	color: white;
+	line-height: 50px;
+	text-align: center;
 	background-color: dodgerblue;
 	box-shadow: 2px 4px 6px #000;
 	/*边框阴影*/
 	-moz-box-shadow: 3px 3px 4px #000;
 	-webkit-box-shadow: 3px 3px 4px #000;
-	float: left;
+
 }
 
 .conter_c_nav_3 {
 	width: 308px;
 	height: 55px;
 	/*border: 1px solid green;*/
+	float: left;
+}
+
+.conter_c_nav_3 div{
+	width: 308px;
+	height: 55px;
+	color: white;
+	line-height: 50px;
 	background-color: green;
+	text-align: center;
 	box-shadow: 2px 4px 6px #000;
 	/*边框阴影*/
 	-moz-box-shadow: 3px 3px 4px #000;
 	-webkit-box-shadow: 3px 3px 4px #000;
-	float: left;
 }
 
 .conter_c_text {
@@ -181,10 +199,36 @@ ul li{
 
 .conter_c_text_top_1 {
 	width: 300px;
-	height: 140px;
+	height: 100px;
 	/*border: 1px solid darkblue;*/
 	float: left;
 	padding-top: 20px;
+	cursor: pointer; 
+}
+.conter_c_text_top_1:hover{
+	border: 1px solid gainsboro;
+}
+.conter_c_text_top_c {
+	width: 300px;
+	height: 100px;
+	/*border: 1px solid darkblue;*/
+	float: left;
+	padding-top: 20px;
+	cursor: pointer;
+}
+.conter_c_text_top_c:hover{
+	border: 1px solid gainsboro;
+}
+.conter_c_text_top_r {
+	width: 300px;
+	height: 100px;
+	/*border: 1px solid darkblue;*/
+	float: left;
+	padding-top: 20px;
+	cursor: pointer;
+}
+.conter_c_text_top_r:hover{
+	border: 1px solid gainsboro;
 }
 
 .conter_c_text_top_1_img {
@@ -213,9 +257,33 @@ ul li{
 
 .conter_c_text_footer_1 {
 	width: 300px;
-	height: 140px;
+	height: 100px;
 	/*border: 1px solid darkblue;*/
 	float: left;
+	cursor: pointer; 
+}
+.conter_c_text_footer_1:hover{
+	border: 1px solid gainsboro;
+}
+.conter_c_text_footer_c {
+	width: 300px;
+	height: 100px;
+	/*border: 1px solid darkblue;*/
+	float: left;
+	cursor: pointer;
+}
+.conter_c_text_footer_c:hover{
+	border: 1px solid gainsboro;
+}
+.conter_c_text_footer_r {
+	width: 300px;
+	height: 100px;
+	/*border: 1px solid darkblue;*/
+	float: left;
+	cursor: pointer
+}
+.conter_c_text_footer_r:hover{
+	border: 1px solid gainsboro;
 }
 
 .conter_2 {
@@ -244,47 +312,54 @@ ul li{
 	width: 445px;
 	height: 215px;
 	float: left;
-	box-shadow: 2px 4px 6px #000;
-	/*边框阴影*/
+	
+}
+.conter_2_c_top_l_c {
+	width: 445px;
+	height: 215px;
+/*	box-shadow: 2px 4px 6px #000;
 	-moz-box-shadow: 3px 3px 4px #000;
 	-webkit-box-shadow: 3px 3px 4px #000;
 	border:1px solid black;
+	background-color: white;*/
+	border: 4px solid gainsboro;
 }
-.conter_2_c_top_1 a{
+
+.conter_2_c_top_l_c a{
 	color: cornflowerblue;
 	font-size: 14px;
 }
-.conter_2_c_top_1 >p{
+.conter_2_c_top_l_c >p{
 	margin:10px 0 15px 15px;
 	font-size: 16px;
 	color:cornflowerblue;
 }
+.conter_2_c_top_1_a{
+	margin-left: 15px;
+	margin-top: 15px;
+}
 .conter_2_c_top_p{
-	width: 300px;
+	width: 400px;
 	height: 120px;
+	/*border: 1px solid saddlebrown;*/
 }
 .conter_2_c_top_p ul li{
 	line-height: 30px;	
 	list-style:disc;
 	margin-left: 35px;
-	font-size: 15px;
+	font-size: 14px;
 }
 .conter_2_c_top_r {
 	width: 445px;
 	height: 215px;
 	/*border: 1px solid darkcyan;*/
 	float: right;
-	box-shadow: 2px 4px 6px #000;
-	/*边框阴影*/
-	-moz-box-shadow: 3px 3px 4px #000;
-	-webkit-box-shadow: 3px 3px 4px #000;
-	border:1px solid black;
 }
-.conter_2_c_top_r a{
+.conter_2_c_top_l_c a{
 	color: cornflowerblue;
 	font-size: 14px;
 }
-.conter_2_c_top_r >p{
+.conter_2_c_top_l_c >p{
 	margin:10px 0 15px 15px;
 	font-size: 16px;
 	color:cornflowerblue;
@@ -295,6 +370,18 @@ ul li{
 	/*border: 1px solid darkblue;*/
 	margin: 0 auto;
 	margin-top: 10%;
+}
+.conter_2_c_footer_l {
+	width: 445px;
+	height: 215px;
+	float: left;
+}
+
+.conter_2_c_footer_r {
+	width: 445px;
+	height: 215px;
+	/*border: 1px solid darkcyan;*/
+	float: right;
 }
 
 .footer {
@@ -326,4 +413,7 @@ ul li{
 }
 .footer_c_1 a{
 	color: white;
+}
+.footer_c_1 a:hover{
+	color: red;
 }

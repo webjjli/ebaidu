@@ -4,7 +4,9 @@
 		<meta charset="UTF-8">
 		<title>软件注册</title>
 		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
 	</head>
 	<body>
 		<!--头部导航栏-->
@@ -27,9 +29,9 @@
 						<li>
 							<a href="technology.html">技术支持</a>
 						</li>
-						<li>
+						<!--<li>
 							<a href="#">在线购买</a>
-						</li>
+						</li>-->
 						<li>
 							<a href="news.html">新闻资讯</a>
 						</li>
@@ -45,7 +47,7 @@
 		<div class="cen-conter">
 			<div class="cen-conter_c">
 				<div class="register">
-					<span>软件注册</span>
+					<div class="animated">软件注册</div>
 				</div>
 			</div>
 		</div>
@@ -54,26 +56,31 @@
 		<div class="download">
 			<div class="download_c">
 				<div class="download_c_l">
-					<p><strong>企业/旗舰版</strong></p><br /><br />
-					<span>隐秘监控 傻瓜化操作</span><br /><br />
-					<input type="button" value="企业/旗舰版注册" /><br /><br />
-					<ul>
+					<p class="animated" ><strong>企业/旗舰版</strong></p><br /><br />
+					<div class="animated">隐秘监控 傻瓜化操作</div><br /><br />
+					<input class="animated" type="button" value="企业/旗舰版注册" /><br /><br />
+					<ul class="animated" >
 						<li>远程桌面控制   像光一般的速度</li>
 						<li>多人同时控制   丰富的权限设置</li>
 						<li>屏幕墙视屏墙   远程批量开关机</li>
 					</ul><br />
-					<a href="#">查看各版本区别>>  </a>
+					<div class="animated">
+						<a class="animated" href="#">查看各版本区别>>  </a>
+					</div>
 				</div>
-				<div class="download_c_l">
-					<p><strong>个人办公版</strong></p><br /><br />
-					<span>远程办公利器  个人办公首选</span><br /><br />
-					<input type="button" value="个人办公版注册" /><br /><br />
-					<ul>
+				
+				<div class="download_c_r">
+					<p class="animated" ><strong>个人办公版</strong></p><br /><br />
+					<div class="animated">远程办公利器  个人办公首选</div><br /><br />
+					<input class="animated" type="button" value="个人办公版注册" /><br /><br />
+					<ul class="animated">
 						<li>远程控制电脑</li>
 						<li>远程传输文件</li>
 						<li>来访权限设定</li>
 					</ul><br />
-					<a href="#">查看各版本区别>>  </a>
+					<div class="animated">
+						<a class="animated" href="#">查看各版本区别>>  </a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -128,4 +135,33 @@
 			</div>
 		</div>
 	</body>
+	<script>
+		function ani(claname,type1,type2){
+            if(($("."+claname).offset().top - $(window).scrollTop())<$(window).height()){
+					$("."+claname).find("div").eq(0).addClass(type1);
+					$("."+claname).find("p").eq(0).addClass(type1);
+					$("."+claname).find("ul").eq(0).addClass(type1);
+					$("."+claname).find("span").eq(0).addClass(type1);
+					$("."+claname).find("input").eq(0).addClass(type1);
+					$("."+claname).find("a").eq(0).addClass(type1);
+					$("."+claname).find("div").eq(1).addClass(type1);
+			};
+			$(window).scroll(function(){
+				if(($("."+claname).offset().top - $(window).scrollTop())<$(window).height()){
+					$("."+claname).find("div").eq(0).addClass(type1);
+				};
+			});
+			
+		};
+		
+		
+		
+		/*ani("conter_c_nav_1","bounceInUp","bounceInUp");//从下往上*/
+		ani("register","bounceInLeft","bounceInRight");
+		ani("download_c","bounceInLeft","bounceInRight");
+		ani("download_c_l","bounceInLeft","bounceInRight");
+		ani("download_c_r","bounceInRight","bounceInLeft");
+		
+
+	</script>
 </html>
